@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VL Global Portfolio Solutions | Asesor Financiero IA & Crypto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/image/image.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+    
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        html { scroll-behavior: smooth; }
+        #mobile-menu.hidden { display: none; }
+        
+        /* Ajustes para el buscador de países en modo oscuro */
+        .ts-control { background: #334155 !important; border: 1px solid #475569 !important; color: white !important; border-radius: 0.5rem !important; padding: 0.75rem !important; }
+        .ts-dropdown { background: #1e293b !important; color: white !important; border: 1px solid #475569 !important; }
+        .ts-dropdown .active { background: #2563eb !important; color: white !important; }
+        .ts-control input { color: white !important; }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <nav class="p-6 max-w-7xl mx-auto sticky top-0 bg-slate-900/90 z-50 backdrop-blur-sm">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold tracking-tighter text-blue-400">VL GLOBAL PORTFOLIO SOLUTIONS</h1>
+            
+            <div class="space-x-6 hidden md:block">
+                <a href="#servicios" class="hover:text-blue-400 transition">Servicios</a>
+                <a href="#ia-approach" class="hover:text-blue-400 transition">Nuestro Enfoque IA</a>
+                <a href="#mercados" class="hover:text-blue-400 transition">Mercados</a>
+                <a href="#about" class="hover:text-blue-400 transition">Sobre Nosotros</a>
+                <a href="#contact" class="bg-blue-600 px-5 py-2 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg">Contáctanos</a>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-2xl text-blue-400 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+            <a href="#servicios" class="hover:text-blue-400 transition block">Servicios</a>
+            <a href="#ia-approach" class="hover:text-blue-400 transition block">Nuestro Enfoque IA</a>
+            <a href="#mercados" class="hover:text-blue-400 transition block">Mercados</a>
+            <a href="#about" class="hover:text-blue-400 transition block">Sobre Nosotros</a>
+            <a href="#contact" class="bg-blue-600 px-5 py-2 rounded-full font-semibold text-center block">Contáctanos</a>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-12 md:py-24 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+            <h2 class="text-4xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Maximiza tu Patrimonio con <span class="text-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Estrategias Globales & IA</span>.
+            </h2>
+            <p class="text-slate-400 text-lg md:text-xl mb-8">
+                Asesoría financiera de vanguardia en Acciones, ETFs, Futuros, Fondos de Inversión y Cryptos, potenciada por Inteligencia Artificial.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition shadow-lg text-center">Agenda una Consulta</a>
+                <a href="#servicios" class="border border-blue-500 text-blue-300 px-8 py-3 rounded-full font-bold hover:bg-blue-500 hover:text-white transition text-center">Nuestros Servicios</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1470&auto=format&fit=crop" alt="Inversiones Globales con IA" class="rounded-xl shadow-2xl border border-slate-700 w-full max-w-md md:max-w-full h-auto object-cover">
+        </div>
+    </header>
+
+    <section id="servicios" class="py-20 bg-slate-800/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios de Asesoría Integral</h3>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Diseñamos portafolios a medida, combinando lo mejor de los mercados tradicionales y emergentes.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-blue-500/20 transition-all duration-300">
+                    <i class="fas fa-chart-line text-blue-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Gestión de Portafolios</h4>
+                    <p class="text-slate-400">Análisis fundamental y técnico para optimizar rendimientos en mercados bursátiles.</p>
+                </div>
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-emerald-500/20 transition-all duration-300">
+                    <i class="fab fa-bitcoin text-emerald-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Estrategias en Criptoactivos</h4>
+                    <p class="text-slate-400">Navegación experta en el volátil mundo de Bitcoin, Ethereum y Altcoins.</p>
+                </div>
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-purple-500/20 transition-all duration-300">
+                    <i class="fas fa-handshake text-purple-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Futuros y Derivados</h4>
+                    <p class="text-slate-400">Cobertura y especulación con instrumentos avanzados para optimizar el riesgo.</p>
+                </div>
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-yellow-500/20 transition-all duration-300">
+                    <i class="fas fa-piggy-bank text-yellow-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Fondos de Inversión</h4>
+                    <p class="text-slate-400">Acceso a fondos diversificados para crecimiento a largo plazo.</p>
+                </div>
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-red-500/20 transition-all duration-300">
+                    <i class="fas fa-brain text-red-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Análisis Cuantitativo con IA</h4>
+                    <p class="text-slate-400">Modelos predictivos para identificar oportunidades ocultas.</p>
+                </div>
+                <div class="glass p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-cyan-500/20 transition-all duration-300">
+                    <i class="fas fa-globe-americas text-cyan-500 text-5xl mb-6"></i>
+                    <h4 class="text-2xl font-bold mb-3">Optimización Global</h4>
+                    <p class="text-slate-400">Diversificación internacional para mitigar riesgos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ia-approach" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                <img src="https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg" alt="IA" class="rounded-xl shadow-2xl border border-slate-700 w-full max-w-md md:max-w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 order-1 md:order-2">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">Nuestro Enfoque: <span class="text-blue-400">IA al Servicio de tu Inversión</span></h3>
+                <p class="text-slate-400 text-lg mb-6">En VL Global Portfolio Solutions, empleamos modelos avanzados de IA para:</p>
+                <ul class="text-left space-y-3 text-slate-300 text-lg mb-8 inline-block">
+                    <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i> Análisis de sentimientos en tiempo real.</li>
+                    <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i> Detección temprana de patrones.</li>
+                    <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i> Backtesting robusto.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="mercados" class="py-20 bg-slate-800/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold mb-4">Visión Integral de los Mercados</h3>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Monitoreamos y analizamos constantemente los principales instrumentos financieros.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="glass p-6 rounded-xl border border-slate-700 shadow-xl">
+                    <h4 class="text-2xl font-bold mb-4 text-center text-blue-300"><i class="fas fa-chart-area mr-2"></i> Acciones & ETFs Globales</h4>
+                    <div id="tradingview_stocks_etfs" style="height:400px; width:100%;"></div>
+                </div>
+                <div class="glass p-6 rounded-xl border border-slate-700 shadow-xl">
+                    <h4 class="text-2xl font-bold mb-4 text-center text-emerald-300"><i class="fab fa-ethereum mr-2"></i> Criptomonedas Destacadas</h4>
+                    <div id="tradingview_cryptos" style="height:400px; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <h3 class="text-4xl font-bold mb-6 text-center">Sobre VL Global Portfolio Solutions</h3>
+            <div class="md:grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-slate-400 text-lg mb-4">Fundada con la visión de democratizar el acceso a estrategias de inversión sofisticadas, VL Global Portfolio Solutions es tu aliado en el complejo mundo financiero.</p>
+                    <p class="text-slate-400 text-lg mb-4">Creemos que el futuro de la inversión reside en una fusión inteligente de la intuición humana y el análisis algorítmico.</p>
+                    <p class="text-blue-400 text-xl font-semibold italic">"Tu éxito financiero es nuestra máxima prioridad."</p>
+                </div>
+                <div class="mt-8 md:mt-0 flex justify-center">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Oficina" class="rounded-xl shadow-2xl border border-slate-700 max-w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-800/40">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12">Inicia tu Viaje Financiero</h3>
+            <div class="max-w-lg mx-auto glass p-6 md:p-8 rounded-xl border border-slate-700 shadow-2xl">
+                <form id="contact-form" class="space-y-6 text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" id="from_name" name="name" placeholder="Nombre Completo" required class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500">
+                        <input type="email" id="user_email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="tel" id="user_phone" name="phone" placeholder="Teléfono" required class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500">
+                        
+                        <div class="w-full">
+                            <select id="user_country" name="country" placeholder="Selecciona tu País..." required>
+                                <option value="">Selecciona tu País...</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="España">España</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="República Dominicana">República Dominicana</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <textarea id="user_message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?..." required class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500"></textarea>
+                    
+                    <button type="submit" id="btn-submit" class="w-full bg-blue-600 text-white py-3 rounded-full font-bold hover:bg-blue-500 transition shadow-lg">
+                        Enviar Información
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center px-6 border-t border-slate-800 bg-slate-900">
+        <p class="text-slate-500">© 2025 VL Global Portfolio Solutions.</p>
+        <p class="text-slate-600 text-xs mt-4 max-w-3xl mx-auto">Aviso Legal: Las inversiones conllevan riesgo. Resultados pasados no garantizan rendimientos futuros.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+
+    <script type="text/javascript">
+        // 1. Funcionalidad del Menú Móvil
+        const menuBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // 2. Inicializar el Buscador de Países (Filtro inteligente)
+        new TomSelect("#user_country",{
+            create: false,
+            sortField: { field: "text", direction: "asc" }
+        });
+
+        // 3. Gráficos de TradingView
+        new TradingView.widget({ 
+            "width": "100%", "height": 400, "symbol": "NASDAQ:AAPL", 
+            "interval": "D", "theme": "dark", "container_id": "tradingview_stocks_etfs", "locale": "es" 
+        });
+        new TradingView.widget({ 
+            "width": "100%", "height": 400, "symbol": "BINANCE:BTCUSDT", 
+            "interval": "D", "theme": "dark", "container_id": "tradingview_cryptos", "locale": "es" 
+        });
+
+        // 4. Configuración de EmailJS (Usando TUS llaves proporcionadas)
+        (function() {
+            emailjs.init("QjZOcZa9FFeJbF2VD"); // Tu Public Key
+        })();
+
+        const btn = document.getElementById('btn-submit');
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.innerText = 'Enviando...';
+            btn.disabled = true;
+
+            const serviceID = 'service_2niol6s'; // Tu Service ID
+            const templateID = 'template_sen730s'; // Tu Template ID
+
+            const templateParams = {
+                name: document.getElementById('from_name').value,
+                email: document.getElementById('user_email').value,
+                phone: document.getElementById('user_phone').value,
+                country: document.getElementById('user_country').value,
+                message: document.getElementById('user_message').value
+            };
+
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(() => {
+                    btn.innerText = '¡Enviado con éxito!';
+                    alert('Gracias. Hemos recibido tu información correctamente.');
+                    contactForm.reset();
+                    
+                    // Resetear el buscador de países visualmente
+                    const selectControl = document.getElementById('user_country').tomselect;
+                    selectControl.clear();
+
+                    btn.disabled = false;
+                    setTimeout(() => { btn.innerText = 'Enviar Información'; }, 3000);
+                }, (err) => {
+                    btn.disabled = false;
+                    btn.innerText = 'Enviar Información';
+                    alert('Error al enviar: ' + JSON.stringify(err));
+                });
+        });
+    </script>
+</body>
+</html>
